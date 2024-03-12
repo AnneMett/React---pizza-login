@@ -69,9 +69,9 @@ export default function Admin1Page() {
 
     return (
         <section className="page">
-            <h1>Bruger side</h1>
+            <h1 className="altfont">Bruger side</h1>
 
-        <h2>Opret ny pizza</h2>
+        <h2>OPRET NY PIZZA</h2>
         <form onSubmit={handleSubmit}>
             <label>
                 Nummer:
@@ -97,7 +97,7 @@ export default function Admin1Page() {
             <button type="submit">Opret</button>
         </form>
         
-            <h2>Du er logget på som {userInSession && user.email}</h2>
+            <h2>Du er logget på som {user&&userInSession && user.email}</h2>
             <button onClick={handleLogout}>Logout</button>
         </section>
     )

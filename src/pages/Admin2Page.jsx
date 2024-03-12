@@ -28,7 +28,7 @@ export default function Admin2Page() {
 
     return (
         <section className="page">
-            <h1>Admin2 side</h1>
+            <h1 className="altfont">Admin2 side</h1>
             <h2>Du er logget på som {userInSession && user.email}</h2>
             <button onClick={handleLogout}>Logout</button>
         </section>
