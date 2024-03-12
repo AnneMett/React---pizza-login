@@ -10,13 +10,18 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyB6ScZtymKbjX8ZpXk00eTlZ_G5qGPM-04",
-  authDomain: "loginproj-2ef0d.firebaseapp.com",
-  projectId: "loginproj-2ef0d",
-  storageBucket: "loginproj-2ef0d.appspot.com",
-  messagingSenderId: "921133593576",
-  appId: "1:921133593576:web:e74032d30bd1b272122a5d"
-};
+  apiKey: "AIzaSyCcYlKXyG8R3Kc7bGC_1WiZMtiGFSykIKg",
+  authDomain: "pizzaprojects.firebaseapp.com",
+  databaseURL: "https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "pizzaprojects",
+  storageBucket: "pizzaprojects.appspot.com",
+  messagingSenderId: "363685546437",
+  appId: "1:363685546437:web:032409c320dd43c732e3ac"
+}; 
+
+
+/* user@pizza.dk 
+password */
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

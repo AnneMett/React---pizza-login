@@ -43,7 +43,7 @@ useEffect(()=>{
 
     return (
         <section className="page">
-        <h1>Pizzas</h1>
+        <h1>	&#127829; PIZZA MENU 	<span>&#127829;</span></h1>
         {isPosts ? (
             <form>
                 {posts.map((pizzaobjekt) => (
@@ -51,7 +51,7 @@ useEffect(()=>{
                 ))}
             </form>
         ) : (
-            <p>Ingen Pizzaer at vise</p>
+            <p>der er ingen pizzaer at se &#128534; </p>
         )}
         <p><Link to="/login">Login</Link></p>
         </section>

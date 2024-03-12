@@ -35,7 +35,7 @@ export default function Admin1Page() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        const url ="";
+        const url ="https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app/Pizza.json";
 
 
     const formData = {
@@ -69,7 +69,7 @@ export default function Admin1Page() {
 
     return (
         <section className="page">
-            <h1>Admin 1 side</h1>
+            <h1>Bruger side</h1>
 
         <h2>Opret ny pizza</h2>
         <form onSubmit={handleSubmit}>
@@ -84,7 +84,7 @@ export default function Admin1Page() {
             </label>
             <br />
             <label>
-                Ingrediense:
+                Ingredienser:
                 <input type="text" value={ingrediense} name="ingrediense" onChange={(e) => setIngrediense(e.target.value)} required/>
             </label>
             <br />
@@ -92,7 +92,7 @@ export default function Admin1Page() {
                 Pris:
                 <input type="number" value={pris} name="pris" onChange={(e) => setPris(e.target.value)} required/>
             </label>
-            (status)
+            {status}
             <br />
             <button type="submit">Opret</button>
         </form>

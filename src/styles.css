@@ -82,6 +82,12 @@ h1 {
     line-height: 1.1;
     text-align: center;
     color: var(--lys);
+    font-family: "Dokdo", system-ui;
+}
+
+h1 span {
+    display: inline-block; /* eller inline-flex */
+    transform: scaleX(-1);
 }
 
 h2 {
@@ -223,7 +229,7 @@ input {
     margin: 0.5em auto 2em;
     width: 100%;
     max-width: 350px;
-    height: 1.2rem;
+    height: 2rem;
     box-sizing: border-box;
     display: block;
     background: var(--lys);
