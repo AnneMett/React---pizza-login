@@ -39,6 +39,25 @@ useEffect(()=>{
 },[]);
 
 
+function handleInputChange(event){
+    const {value, checked} = event.target;
+
+    if(checked) {
+        setPizzaer([...pizzaer, value])
+    }
+    else{
+        const index = pizzaer.indexOf(value);
+        pizzaer.splice(index, 1);
+        setPizzaer(pizzaer);
+    }
+}
+
+function handleSubmit(e) {
+
+}
+
+
+
 
 
     return (

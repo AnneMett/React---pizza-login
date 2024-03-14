@@ -32,5 +32,5 @@ export default function Admin2Page() {
             <h2>Du er logget på som {userInSession && user.email}</h2>
             <button onClick={handleLogout}>Logout</button>
         </section>
-    )
+    )   
 }
