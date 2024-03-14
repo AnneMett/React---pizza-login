@@ -25,7 +25,7 @@ export default function LoginPage() {
 
     return (
         <div>
-            <h1 style={{ marginTop: "155px" }}>Login side</h1>
+            <h1 style={{ marginTop: "155px" }}>LOGIN SIDE</h1>
             <form onSubmit={handleSubmit} className='login-form'>
                 <input
                     type="email"
@@ -43,7 +43,7 @@ export default function LoginPage() {
                     onChange={(e) => setPassword(e.target.value)}
                     name="userpassword"
                 />
-                <button type="submit" className='login-button'>Login</button>
+                <button type="submit" className='login-button' >Login</button>
             </form>
             
         </div>

@@ -98,7 +98,7 @@ export default function Admin1Page() {
         </form>
         
             <h2>Du er logget på som {user&&userInSession && user.email}</h2>
-            <button onClick={handleLogout}>Logout</button>
+            <button className='login-button' onClick={handleLogout}>Logout</button>
         </section>
     )
 

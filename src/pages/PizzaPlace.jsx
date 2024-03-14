@@ -7,8 +7,8 @@ export default function PizzaPlace() {
 
 // "posts" kommer til at indeholde listen af pizzaer
 const [posts, setPosts] = useState([]);
-/* "isPosts" kan være enten "true" (hvis der er pizzer), eller
-"false" hvis ingen pizzer der er. */
+/* "isPosts" kan være enten "true" (hvis der er pizzaer), eller
+"false" hvis ingen pizzaer der er. */
 const [isPosts, setIsPosts]= useState(true);
 
 
@@ -23,7 +23,7 @@ const[pizzaer, setPizzaer]=useState([]);
 // data hentes fra firebase go gemmes i "post" variabel
 useEffect(()=>{
     async function getPosts(){
-        const url = "https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app/Pizza.json";
+        const url = 'https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app/Pizza.json';
 
 
         // vent indtil response modatger positivtt scar fra firebase
@@ -64,13 +64,13 @@ function handleSubmit(e) {
     e.preventDefault();
 
     if (pizzaer.length > 0) { // det følgende sker kun, hvis brugeren har valgt en pizza
-    const url = "https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app/bestilling.json";
+    const url = 'https://pizzaprojects-default-rtdb.europe-west1.firebasedatabase.app/bestilling.json';
 
     const formData ={
         navn: navn,
         email: email, 
         mobilnummer: mobilnummer, 
-        pizzer: pizzaer,
+        pizzaer: pizzaer,
         status: "Ny bestilling"
     };
 
@@ -136,7 +136,7 @@ function handleSubmit(e) {
                 />
 
             {status}
-            <button type="submit">Send bestilling</button>
+            <button className='login-button btn' type="submit">Send bestilling</button>
             </form>
         ) : (
             <p>der er ingen pizzaer at se &#128534; </p>

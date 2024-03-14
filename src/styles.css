@@ -60,9 +60,17 @@ nav a {
     text-decoration: none;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    border: 2px solid var(--lys); /* Use the --green variable */
+    border: 4px solid var(--lys);
     font-weight: 500;
     font-size: 1.2em;
+}
+
+nav a:first-child{
+    border-right: none;
+}
+
+nav a:last-child{
+    border-left: none;
 }
 
 /* Change the color of links on hover */
@@ -114,6 +122,30 @@ a{
     border: dotted 2px var(--gul);
 
 }
+
+/* ----------- scroll bar ---------- */
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--mørk);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--rød);
+    border-radius: 50px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--lys);
+  }
+
+
 
 /* ---------- Page Styling ---------- */
 .page {
@@ -207,6 +239,7 @@ button {
     text-align: center;
     cursor: pointer;
     border: none;
+    border-radius: 60px;
     color: var(--lys);
     background-color: var(--rød);
     letter-spacing: 0.05em;
@@ -217,11 +250,7 @@ button {
     margin: 1em auto 0;
 }
 
-button.btn-outline {
-    background-color: var(--mørk);
-    color: var(--green);
-    border: solid 2px var(--grøn);
-}
+
 
 .btn-sign-out {
     position: absolute;
@@ -236,11 +265,16 @@ input {
     margin: 0.5em auto 2em;
     width: 100%;
     max-width: 350px;
-    height: 2rem;
+    height: 2.7rem;
+    border-radius: 60px;
     box-sizing: border-box;
     display: block;
     background: var(--lys);
     border: solid 2px var(--mørk);
+}
+
+.checkbox{
+    height: 1.6rem;
 }
 
 .image-preview {
